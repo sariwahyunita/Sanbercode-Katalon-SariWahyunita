@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_close</name>
+   <name>body</name>
    <tag></tag>
-   <elementGuidId>590e6192-c4e3-4caf-b47f-c582f72c1ea3</elementGuidId>
+   <elementGuidId>cabb4cf4-7cb8-4304-8468-ff5d1fb9b488</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[.='Close']/following-sibling::button[.='Sing up']</value>
+         <value>//body</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

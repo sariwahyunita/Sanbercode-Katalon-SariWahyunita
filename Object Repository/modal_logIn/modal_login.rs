@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_close</name>
+   <name>modal_login</name>
    <tag></tag>
-   <elementGuidId>590e6192-c4e3-4caf-b47f-c582f72c1ea3</elementGuidId>
+   <elementGuidId>6714d038-d6d8-4378-b012-934957e25a4e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[.='Close']/following-sibling::button[.='Sing up']</value>
+         <value>//div[@id='logInModal']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
