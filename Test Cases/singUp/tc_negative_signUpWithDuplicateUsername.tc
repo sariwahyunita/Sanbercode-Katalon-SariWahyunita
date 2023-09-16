@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tc_negative_signUpWithDuplicateUsername</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c90a60af-c303-4364-adc3-22202ddef8b8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>656e757d-eb22-4824-a907-92007f9c4495</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'aa1_'</defaultValue>
+      <description></description>
+      <id>656e757d-eb22-4824-a907-92007f9c4495</id>
+      <masked>false</masked>
+      <name>existingUsername</name>
+   </variable>
+</TestCaseEntity>

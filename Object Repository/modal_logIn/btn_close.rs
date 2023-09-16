@@ -6,12 +6,12 @@
    <elementGuidId>db7504af-8a83-4900-b129-1395ff15c267</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[.='Close']//following::button[.='Log in']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[.='Close']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
