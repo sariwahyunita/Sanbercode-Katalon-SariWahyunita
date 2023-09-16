@@ -17,26 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('navbar/a_navbarTitle'), 0)
+//create username dan password with random number
+def randomNumber = org.apache.commons.lang.RandomStringUtils.randomNumeric(5)
 
-WebUI.callTestCase(findTestCase('login/verifyUserHaveNotLogin'), [:], FailureHandling.OPTIONAL)
+WebUI.verifyElementPresent(findTestObject('navbar/a_signUp'), 0)
 
-WebUI.click(findTestObject('navbar/a_logIn'))
+WebUI.click(findTestObject('navbar/a_signUp'))
 
-WebUI.verifyElementPresent(findTestObject('modal_logIn/h5_titleLogin'), 0)
+WebUI.verifyElementPresent(findTestObject('modal_signUp/h5_titleSignUp'), 0)
 
-WebUI.setText(findTestObject('modal_logIn/input_username'), GlobalVariable.username)
-println(GlobalVariable.username)
+WebUI.setText(findTestObject('modal_signUp/input_username'), 'userTest_' + randomNumber)
 
-WebUI.setText(findTestObject('modal_logIn/input_password'), GlobalVariable.password)
-println(GlobalVariable.password)
+WebUI.setText(findTestObject('modal_signUp/input_password'), 'password_' + randomNumber)
 
-WebUI.click(findTestObject('modal_logIn/btn_logIn'))
+WebUI.click(findTestObject('modal_signUp/btn_signUp'))
 
-WebUI.verifyElementPresent(findTestObject('navbar/a_nameofuser'), 0)
+if (WebUI.verifyAlertPresent(0) == true) {
+    alertText = WebUI.getAlertText()
 
-WebUI.delay(3)
+    WebUI.verifyMatch(alertText, 'Sign up successful.', false)
 
-WebUI.verifyElementText(findTestObject('navbar/a_nameofuser'), WebUI.concatenate(((['Welcome ', username]) as String[]), 
-        FailureHandling.STOP_ON_FAILURE))
+    WebUI.delay(3)
+}
+
+WebUI.refresh()
 
