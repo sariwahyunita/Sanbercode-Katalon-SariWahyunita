@@ -17,8 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//create username dan password with random number
-def randomNumber = org.apache.commons.lang.RandomStringUtils.randomNumeric(5)
+WebUI.verifyElementPresent(findTestObject('navbar/a_navbarTitle'), 0)
 
 WebUI.verifyElementPresent(findTestObject('navbar/a_signUp'), 0)
 
@@ -26,19 +25,20 @@ WebUI.click(findTestObject('navbar/a_signUp'))
 
 WebUI.verifyElementPresent(findTestObject('modal_signUp/h5_titleSignUp'), 0)
 
-WebUI.setText(findTestObject('modal_signUp/input_username'), 'userTest_' + randomNumber)
+WebUI.setText(findTestObject('modal_signUp/input_username'), existingUsername)
 
-WebUI.setText(findTestObject('modal_signUp/input_password'), 'password_' + randomNumber)
+WebUI.setText(findTestObject('modal_signUp/input_password'), existingUsername)
 
 WebUI.click(findTestObject('modal_signUp/btn_signUp'))
 
 if (WebUI.verifyAlertPresent(0) == true) {
-    alertText = WebUI.getAlertText()
+	alertText = WebUI.getAlertText()
 
-    WebUI.verifyMatch(alertText, 'Sign up successful.', false)
+	WebUI.verifyMatch(alertText, 'This user already exist.', false)
 
-    WebUI.delay(3)
+	WebUI.delay(3)
+
+	WebUI.acceptAlert()
 }
 
 WebUI.refresh()
-
