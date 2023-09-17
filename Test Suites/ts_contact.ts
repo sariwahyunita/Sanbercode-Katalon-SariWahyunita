@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>ts_contact</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>dfd34624-2d41-44a1-863e-b287b2c12cec</testSuiteGuid>
+   <testCaseLink>
+      <guid>300eda56-07ac-437f-906d-48329cb612b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/General/openBrowser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dcbbe395-571b-4f70-8d00-32496bc808a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/contact/tc_positive_sendMessageValid</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>9680cbdc-7b70-4a2e-b157-21e3507c8f81</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/dataContact</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>9680cbdc-7b70-4a2e-b157-21e3507c8f81</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>a39ae9dc-c66d-4d99-b77e-4e6d33d9dbb2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9680cbdc-7b70-4a2e-b157-21e3507c8f81</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>name</value>
+         <variableId>bcd15862-6efc-4eb2-80d8-088af8a88ff4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9680cbdc-7b70-4a2e-b157-21e3507c8f81</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>message</value>
+         <variableId>6f8cf8f3-12a9-46b4-bb82-4d1297f25632</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fef177f6-0c24-4792-8d3c-4c94715154ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/General/closeBroser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+</TestSuiteEntity>
