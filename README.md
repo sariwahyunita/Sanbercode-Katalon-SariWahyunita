@@ -34,7 +34,7 @@ Module Contact :
 Make sure you already clone this repository. <br>
 You can use your terminal / git cmd with command:<br>
 `git clone https://github.com/sariwahyunita/Sanbercode-Katalon-SariWahyunita.git` <br>
-and make sure check out to branch `master` for final code befor running test suite.
+and make sure checkout to branch `master` for final code before running test suite.
 
 After that, you can running the test suite fom each module :
 * Module Sign Up >> `ts_singUp`
