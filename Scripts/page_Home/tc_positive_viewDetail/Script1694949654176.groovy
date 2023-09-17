@@ -17,28 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.verifyElementPresent(findTestObject('navbar/a_home'), 0)
 
-WebUI.verifyElementPresent(findTestObject('navbar/a_signUp'), 0)
+WebUI.click(findTestObject('navbar/a_home'))
 
-WebUI.click(findTestObject('navbar/a_signUp'))
+WebUI.verifyElementPresent(findTestObject('home/a_firstItem'), 0)
 
-WebUI.verifyElementPresent(findTestObject('modal_signUp/h5_titleSignUp'), 0)
+titleItem = WebUI.getText(findTestObject('home/a_firstItem'))
 
-WebUI.clearText(findTestObject('modal_signUp/input_username'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('home/a_firstItem'))
 
-WebUI.clearText(findTestObject('modal_signUp/input_password'), FailureHandling.OPTIONAL)
+WebUI.verifyElementPresent(findTestObject('home/detail/h2_title'), 0)
 
-WebUI.click(findTestObject('modal_signUp/btn_signUp'))
-
-if (WebUI.verifyAlertPresent(0) == true) {
-    alertText = WebUI.getAlertText()
-
-    WebUI.verifyMatch(alertText, 'Please fill out Username and Password.', false)
-
-    WebUI.delay(3)
-
-    WebUI.dismissAlert()
-}
-
-WebUI.refresh()
+WebUI.verifyElementText(findTestObject('home/detail/h2_title'), titleItem)
 
