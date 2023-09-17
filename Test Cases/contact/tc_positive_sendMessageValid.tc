@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tc_positive_sendMessageValid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c325278-d062-4597-a96e-22a9c94168c5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a39ae9dc-c66d-4d99-b77e-4e6d33d9dbb2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bcd15862-6efc-4eb2-80d8-088af8a88ff4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6f8cf8f3-12a9-46b4-bb82-4d1297f25632</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'aa1_@mail.com'</defaultValue>
+      <description></description>
+      <id>a39ae9dc-c66d-4d99-b77e-4e6d33d9dbb2</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'aa1_'</defaultValue>
+      <description></description>
+      <id>bcd15862-6efc-4eb2-80d8-088af8a88ff4</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pesan'</defaultValue>
+      <description></description>
+      <id>6f8cf8f3-12a9-46b4-bb82-4d1297f25632</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variable>
+</TestCaseEntity>
