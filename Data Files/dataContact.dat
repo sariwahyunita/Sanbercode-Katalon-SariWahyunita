@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>dataContact</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>0081e3d3-a6e0-49ce-b9f0-7cb8f1b46221</dataFileGUID>
+   <dataSourceUrl>D:\03. LEARN\06. QA\Class\Sanbercode - SQAssurance Intermediate (Batch 49) - Sep 2023\Week 3\Sanbercode-Katalon-SariWahyunita\Data Files\dataRaw\ddtContact.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sheet1</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
