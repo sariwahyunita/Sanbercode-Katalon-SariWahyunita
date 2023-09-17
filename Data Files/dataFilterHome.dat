@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>dataContact</name>
+   <name>dataFilterHome</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>0081e3d3-a6e0-49ce-b9f0-7cb8f1b46221</dataFileGUID>
-   <dataSourceUrl>Data Files/dataRaw/ddtContact.xlsx</dataSourceUrl>
+   <dataFileGUID>d052a6b1-e03d-4250-a367-92b14115d618</dataFileGUID>
+   <dataSourceUrl>Data Files/dataRaw/ddtFilterHome.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
